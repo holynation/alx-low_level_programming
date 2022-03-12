@@ -12,13 +12,13 @@ int main(void)
 	int t;
 	int u;
 
-	for (tens = 0; tens <= 9; tens++) /* printing the first pair */
+	for (tens = '0'; tens <= '9'; tens++) /* printing the first pair */
 	{
-		for (unit = 0; unit <= 9; unit++)
+		for (unit = '0'; unit <= '9'; unit++)
 		{
-			for (t = tens; t <= 9; t++)/* printing the second pair */
+			for (t = tens; t <= '9'; t++)/* printing the second pair */
 			{
-				for (u = unit + 1; u <= 9; u++)
+				for (u = unit + '1'; u <= '9'; u++)
 				{
 					putchar(tens);
 					putchar(unit);
@@ -26,15 +26,15 @@ int main(void)
 					putchar(t);
 					putchar(u);
 
-					if (!((tens == 9 && unit == 8) && (t == 9 && u == 9)))
-					if (!((tens == 9 && unit == 8) &&
-					      (t == 9 && u == 9)))
+					if (!((tens == '9' && unit == '8') && (t == '9' && u == '9')))
+					if (!((tens == '9' && unit == '8') &&
+					      (t == '9' && u == '9')))
 					{
 						putchar(',');
 						putchar(' ');
 					}
 				}
-				u = 0;
+				u = '0';
 			}
 		}
 	}
