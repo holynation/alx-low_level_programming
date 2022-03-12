@@ -35,7 +35,7 @@ int main(void)
 						putchar(' ');
 					}
 				}
-				O = '0';
+				o = '0';
 			}
 		}
 	}
