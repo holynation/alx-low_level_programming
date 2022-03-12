@@ -3,7 +3,7 @@
 /**
  *main - Entry point
  *Description: Prints hexadecimal base 0123456789abcdef,
- *using putchar.Since hexadecimal is 
+ *using putchar.Since hexadecimal is
  *0-9 A-F i.e A = 10, B = 11 and so on.
  *Return: Always return 0
  */
