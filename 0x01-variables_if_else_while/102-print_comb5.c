@@ -17,15 +17,15 @@ int main(void)
 	{
 		for (unit = '0'; unit <= '9'; unit++)
 		{
-			for (t = tens; t<= '9'; t++)
+			for (t = tens; t <= '9'; t++)
 			{
-				for (u = (unit+1); u<= '9'; u++)
+				for (u = (unit + 1); u <= '9'; u++)
 				{
 					putchar(tens);
 					putchar(unit);
 					putchar(' ');
-					putchar('t');
-					putchar('u');
+					putchar(t);
+					putchar(u);
 
 					if (!((tens == '9' && unit == '8') && (t == '9' && u == '9')))
 					{
