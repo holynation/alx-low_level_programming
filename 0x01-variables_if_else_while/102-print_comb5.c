@@ -13,13 +13,13 @@ int main(void)
 	int t;
 	int u;
 
-	for (tens = '0'; tens <= '9'; tens++)
+	for (tens = '0'; tens <= '9'; tens++) /* printing the first pair */
 	{
 		for (unit = '0'; unit <= '9'; unit++)
 		{
-			for (t = tens; t <= '9'; t++)
+			for (t = tens; t <= '9'; t++) /* printing the second pair */
 			{
-				for (u = (unit + 1); u <= '9'; u++)
+				for (u = unit + 1; u <= '9'; u++)
 				{
 					putchar(tens);
 					putchar(unit);
