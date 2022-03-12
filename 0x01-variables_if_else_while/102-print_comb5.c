@@ -32,7 +32,6 @@ int main(void)
 						putchar(' ');
 					}
 				}
-				u = '0';
 			}
 		}
 	}
