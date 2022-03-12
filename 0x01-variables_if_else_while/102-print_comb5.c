@@ -11,11 +11,11 @@ int main(void)
 	int unit;
 	int t;
 	int u;
-	for (tens = '0'; tens <= '9'; tens++) /* printing the first pair */
+	for (tens = '0'; tens <= '9'; tens++)/* printing the first pair */
 	{
 		for (unit = '0'; unit <= '9'; unit++)
 		{
-			for (t = tens; t <= '9'; t++) /* printing the second pair */
+			for (t = tens; t <= '9'; t++)/* printing the second pair */
 			{
 				for (u = unit + 1; u <= '9'; u++)
 				{
