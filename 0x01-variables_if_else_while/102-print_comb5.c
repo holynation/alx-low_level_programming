@@ -10,32 +10,32 @@
 int main(void)
 {
 	int tens;
-	int unit;
+	int ones;
 	int t;
-	int u;
+	int o;
 
-	for (tens = '0'; tens <= '9'; tens++) /* printing the first pair */
+	for (tens = '0'; tens <= '9'; tens++) /*printing the first two digit pair*/
 	{
-		for (unit = '0'; unit <= '9'; unit++)
+		for (ones = '0'; ones <= '9'; ones++)
 		{
-			for (t = tens; t <= '9'; t++) /* printing the second pair */
+		 	for (t = tens; t <= '9'; t++) /*printing the second pair*/
 			{
-				for (u = unit + 1; u <= '9'; u++)
+				for (o = ones + 1; o <= '9'; o++)
 				{
 					putchar(tens);
-					putchar(unit);
+					putchar(ones);
 					putchar(' ');
 					putchar(t);
-					putchar(u);
+					putchar(o);
 
-					if (!((tens == '9' && unit == '8') &&
-					      (t == '9' && u == '9')))
+					if (!((tens == '9' && ones == '8') &&
+					      (t == '9' && o == '9')))
 					{
 						putchar(',');
 						putchar(' ');
 					}
 				}
-				u = '0'; /*resetting u back to zero*/
+				o = '0'; /* resetting o to zero*/
 			}
 		}
 	}
