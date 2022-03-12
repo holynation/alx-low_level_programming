@@ -3,6 +3,7 @@
 /**
   *main - Entry point
   *Description: Print all possible combos of two-digit numbers
+  *from 00-99 e.g. 00 01, 00 02, 00 03, 00 04 but no repeats
   *Return: Always return 0
   */
 
@@ -19,7 +20,7 @@ int main(void)
 		{
 			for (t = tens; t <= '9'; t++) /* printing the second pair */
 			{
-				for (u = unit + 1; u <= '9'; u++)
+				for (u = (unit + 1); u <= '9'; u++)
 				{
 					putchar(tens);
 					putchar(unit);
