@@ -17,7 +17,6 @@ int main(void)
 		printf("%li, %li, ", a, b);
 		a += b;
 		b += a;
-		counter = counter;
 	}
 	if (countTotal % 2 == 1)
 	{
