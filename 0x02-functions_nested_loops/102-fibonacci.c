@@ -20,7 +20,7 @@ int main(void)
 	}
 	if (countTotal % 2 == 1)
 	{
-		if (a != null)
+		if (a != '\0')
 		{
 			putchar(',');
 		}
