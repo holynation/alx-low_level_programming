@@ -37,6 +37,5 @@ void times_table(void)
 				_putchar('0' + (result % 10)); /* to get the last digit*/
 			}
 		}
-
 	} 
 }
