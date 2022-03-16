@@ -9,12 +9,14 @@
 int print_last_digit(int n)
 {
 	/* since an integer modulo division by 10 gives it last digit*/
+	int i;
+	
 	if (n < 0)
 	{
-		n *= -1;
+		i *= -1;
 	}
+	i = n % 10;
+	_putchar('0' + i);
 
-	_putchar('0' + (n % 10));
-
-	return (n % 10);
+	return (i);
 }
