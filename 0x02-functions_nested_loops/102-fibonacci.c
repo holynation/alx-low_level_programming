@@ -20,12 +20,11 @@ int main(void)
 	}
 	if (countTotal % 2 == 1)
 	{
-		if (a != '\0' && counter < (countTotal / 2))
-		{
-			putchar(',');
-			putchar(' ');
-		}
 		printf("%li", a);
+		if (counter < (countTotal / 2))
+		{
+			printf(", ");
+		}
 	}
 	printf("\n");
 
