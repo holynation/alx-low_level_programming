@@ -24,7 +24,7 @@ int main(void)
 		{
 			putchar(',');
 		}
-		printf(", %li", a);
+		printf(" %li", a);
 	}
 	printf("\n");
 
