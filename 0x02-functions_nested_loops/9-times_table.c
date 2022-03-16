@@ -11,7 +11,7 @@ void times_table(void)
 	int row;
 	int column;
 	int result;
-	
+
 	for (row = 0; row <= 9; row++)
 	{
 		for (column = 0; column <= 9; column++)
@@ -22,14 +22,16 @@ void times_table(void)
 			{
 				_putchar('0' + result);
 			}
-			else if (result <= 9)
+			
+			if (result <= 9)
 			{
 				_putchar(',');
 				_putchar(' ');
 				_putchar(' ');
 				_putchar('0' + result);
 			}
-			else if (result > 9)/* since _putchar print only single character*/
+			
+			if (result > 9)/* since _putchar print only single character*/
 			{
 				_putchar(',');
 				_putchar(' ');
@@ -37,5 +39,5 @@ void times_table(void)
 				_putchar('0' + (result % 10)); /* to get the last digit*/
 			}
 		}
-	} 
+	}
 }
