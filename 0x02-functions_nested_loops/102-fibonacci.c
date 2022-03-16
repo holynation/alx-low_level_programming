@@ -11,6 +11,7 @@ int main(void)
 	int countTotal = 50;
 	long a = 1;
 	long b = 2;
+	long result;
 
 	for (counter = 1; counter <= (countTotal / 2); counter++)
 	{
@@ -20,12 +21,13 @@ int main(void)
 	}
 	if (countTotal % 2 == 1)
 	{
-		if (a != '\0')
+		if (result != '\0')
 		{
-			putchar(',');
+			result .= ",";
 		}
-		printf(" %li", a);
+		result .= " " + a;
 	}
+	printf(result);
 	printf("\n");
 
 	return (0);
