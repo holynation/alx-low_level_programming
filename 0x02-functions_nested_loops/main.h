@@ -29,12 +29,12 @@ void print_alphabet_x10(void);
 int _islower(int c);
 
 /**
-  * _isaplha - checks for alphabetic character
+  * _isalpha - checks for alphabetic character
   * @c: the character to check
   * Return: 1 if lower or upper, 0 if otherwise
   */
 
-int _isaplha(int c);
+int _isalpha(int c);
 
 /**
   * print_sign - prints the sign of a number
