@@ -9,7 +9,7 @@
 int print_last_digit(int n)
 {
 	/* since an integer modulo division by 10 gives it last digit*/
-	int i = n;
+	long i = n;
 
 	if (i < 0)
 	{
