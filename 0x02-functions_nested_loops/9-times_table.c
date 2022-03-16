@@ -22,20 +22,22 @@ void times_table(void)
 			{
 				_putchar('0' + result);
 			}
-			else if (result <= 9)
+			else
 			{
 				_putchar(',');
 				_putchar(' ');
-				_putchar(' ');
-				_putchar('0' + result);
+				if (result <= 9)
+				{
+					_putchar(' ');
+					_putchar('0' + result);
+				}
+				if (result > 9)/* since _putchar print only single character*/
+				{
+					_putchar('0' + (result / 10)); /* to get the first digit*/
+					_putchar('0' + (result % 10)); /* to get the last digit*/
+				}
 			}
-			else if (result > 9)/* since _putchar print only single character*/
-			{
-				_putchar(',');
-				_putchar(' ');
-				_putchar('0' + (result / 10)); /* to get the first digit*/
-				_putchar('0' + (result % 10)); /* to get the last digit*/
-			}
+			
 		}
 	}
 }
