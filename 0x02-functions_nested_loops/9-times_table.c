@@ -21,8 +21,7 @@ void times_table(void)
 			if (column == 0)
 			{
 				_putchar('0' + result);
-			}
-			
+			}	
 			if (result <= 9)
 			{
 				_putchar(',');
@@ -30,7 +29,6 @@ void times_table(void)
 				_putchar(' ');
 				_putchar('0' + result);
 			}
-			
 			if (result > 9)/* since _putchar print only single character*/
 			{
 				_putchar(',');
