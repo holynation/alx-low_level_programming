@@ -2,6 +2,8 @@
 
 /**
   * print_aplhabet - print the alphabet in lowercase
+  * Description: a function that print alphabet characters
+  * in lowercase
   * Return: 0
   */
 
