@@ -9,7 +9,6 @@
 int _isalpha(int c)
 {
 	/* since character are stored as integer under the hood */
-	
 	if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'))
 	{
 		return (1);
