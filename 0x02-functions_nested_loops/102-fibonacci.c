@@ -7,7 +7,7 @@
 
 int main(void)
 {
-	int static counter;
+	int counter;
 	int countTotal = 50;
 	long a = 1;
 	long b = 2;
@@ -17,6 +17,7 @@ int main(void)
 		printf("%li, %li, ", a, b);
 		a += b;
 		b += a;
+		counter = counter;
 	}
 	if (countTotal % 2 == 1)
 	{
