@@ -8,7 +8,8 @@
 void _puts(char *str)
 {
 	/* since a string always with '\0' */
-	while (*str != '\0'){
+	while (*str != '\0')
+	{
 		_putchar(*str++);
 	}
 
