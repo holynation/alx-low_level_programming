@@ -34,7 +34,8 @@ void puts_half(char *str)
 	int len = _strlen(str);
 
 	/* find the index to start depending on even/odd amount of strlen */
-	if (len % 2 != 0){/* odd character*/
+	if (len % 2 != 0)/* odd character*/
+	{
 		strAvg = (len / 2) + 1;
 	}
 	else
