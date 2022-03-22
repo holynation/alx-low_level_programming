@@ -9,16 +9,15 @@ void rev_string(char *s)
 {
 	int length, c;
 	char *begin, *end, temp;
-	/*calculating the string length*/
+	
+	begin  = s;
+	end    = s;
 
 	while (*s != '\0')
 	{
 		length++;
 		s++;
 	}
-	
-	begin  = s;
-	end    = s;
 
 	for (c = 0; c < length - 1; c++)
 		end++;
