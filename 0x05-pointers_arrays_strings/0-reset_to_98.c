@@ -6,7 +6,7 @@
   * @n: pointer to int n
   */
 
-int void(int *n)
+void(int *n)
 {
 	*n = 98;
 }
