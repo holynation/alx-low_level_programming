@@ -28,10 +28,9 @@ int _strlen(char *s)
 void puts2(char *str)
 {
 	int i;
-	
 	/* taking advantage of _strlen function */
 	for (i = 0; str[i] != '\0' && i < _strlen(str); i++)
-		if (str[i] == '0' || str[i] % 2 == '0')
+		if (str[i] == 0 || str[i] % 2 == 0)
 			_putchar(str[i]);
 
 	_putchar('\n');
