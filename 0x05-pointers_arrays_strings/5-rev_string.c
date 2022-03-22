@@ -14,6 +14,7 @@ void rev_string(char *s)
 	while (*s != '\0')
 	{
 		count++;
+		s++;
 	}
 	/* get the last character, recall '\0' as the last character*/
 	end = count - 1;
