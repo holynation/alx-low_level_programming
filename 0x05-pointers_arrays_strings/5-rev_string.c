@@ -9,7 +9,6 @@ void rev_string(char *s)
 {
 	int length, c;
 	char *begin, *end, temp;
-	int count = 0;
 	/*calculating the string length*/
 
 	while (*s != '\0')
