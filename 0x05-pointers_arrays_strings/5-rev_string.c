@@ -7,7 +7,7 @@
 
 void rev_string(char *s)
 {
-	char *tmp = s;
+	char tmp;
 	int start, end, count = 0;
 	/*calculating the string length*/
 
@@ -17,12 +17,13 @@ void rev_string(char *s)
 	}
 	/* get the last character, recall '\0' as the last character*/
 	end = count - 1;
+	int i = 0;
 
-	for (start = 0; start < count; start++)
+	while (i < end)
 	{
-		tmp[start] = s[end];
-		end--;
+		tmp = s[i];
+		s[i] = s[end];
+		s[end] = tmp;
+		i++, end--;
 	}
-	tmp[start] = '\0';
-	*s = tmp;
 }
