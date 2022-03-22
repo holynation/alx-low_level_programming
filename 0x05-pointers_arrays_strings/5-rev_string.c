@@ -7,7 +7,7 @@
 
 void rev_string(char *s)
 {
-	char *tmp = *s;
+	char *tmp = s;
 	int start, end, count = 0;
 	/*calculating the string length*/
 
@@ -24,4 +24,5 @@ void rev_string(char *s)
 		end--;
 	}
 	tmp[start] = '\0';
+	*s = tmp;
 }
