@@ -7,23 +7,30 @@
 
 void rev_string(char *s)
 {
-	char tmp;
-	int end, count = 0, i = 0;
+	int length, c;
+	char *begin, *end, temp;
+	int count = 0;
 	/*calculating the string length*/
 
 	while (*s != '\0')
 	{
-		count++;
+		length++;
 		s++;
 	}
-	/* get the last character, recall '\0' as the last character*/
-	end = count - 1;
+	
+	begin  = s;
+	end    = s;
 
-	while (i < end)
-	{
-		tmp = s[i];
-		s[i] = s[end];
-		s[end] = tmp;
-		i++, end--;
+	for (c = 0; c < length - 1; c++)
+		end++;
+	
+	for (c = 0; c < length/2; c++)
+	{        
+		temp   = *end;
+		*end   = *begin;
+		*begin = temp;
+
+		begin++;
+		end--;
 	}
 }
