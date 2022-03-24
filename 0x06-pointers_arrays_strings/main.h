@@ -80,6 +80,14 @@ char *cap_string(char *s);
 char *leet(char *s);
 
 /**
+ * rot13 - encode string using rot13
+ * @s: string to encode
+ * Return: encoded string
+ */
+
+char *rot13(char *s);
+
+/**
  * print_number - print an integer, without using long, arrays, or pointers
  * @n: number to be printed
  */
