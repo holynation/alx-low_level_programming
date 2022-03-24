@@ -12,7 +12,6 @@ char *_strcat(char *dest, char *src)
 {
 	int i = 0;
 	int j = 0;
-	
 	/* to count the str len without the null byte*/
 	while (dest[i] != '\0')
 	{
