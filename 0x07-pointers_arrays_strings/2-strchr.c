@@ -1,0 +1,28 @@
+#include "main.h"
+
+/**
+ * _strchr - locate first occurrence of char in string
+ * and returns pointer at that point
+ * @s: string to search
+ * @c: target characer
+ *
+ * Return: pointer of that character in the string
+ */
+
+char *_strchr(char *s, char c)
+{
+	int i = 0;
+
+	while (s[i] != '\0')/* find match */
+	{
+		if (s[i] == c)/* if matc, assign to address*/
+		{
+			return (&s[i]);
+		}
+		else
+		{
+			return (NULL);
+		}
+		i++;
+	}
+}
