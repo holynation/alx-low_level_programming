@@ -13,16 +13,17 @@ char *_strchr(char *s, char c)
 {
 	int i = 0;
 
-	while (s[i] != '\0')/* find match */
+	while (s[i] != '\0' && s[i] != c)/* find match */
 	{
-		if (s[i] == c)/* if matc, assign to address*/
-		{
-			return (&s[i]);
-		}
-		else
-		{
-			return (NULL);
-		}
 		i++;
+	}
+
+	if (s[i] == c)
+	{
+		return (&s[i]);
+	}
+	else
+	{
+		return (NULL);
 	}
 }
