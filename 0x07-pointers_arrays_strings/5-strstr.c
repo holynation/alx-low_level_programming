@@ -31,7 +31,7 @@ char *_strstr(char *haystack, char *needle)
 					x++, y++;
 				else
 					break;
-			}/* if matched throughout, return haystack */
+			} /* if matched throughout, return haystack */
 
 			if (needle[y] == '\0')
 			{
