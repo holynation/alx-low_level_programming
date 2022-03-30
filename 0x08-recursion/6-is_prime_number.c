@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * is_prime - recursively divide by higher divisor
+ * isPrime - recursively divide by higher divisor
  * @n: number to check if prime
  * @divisor: divisor
  *
@@ -21,6 +21,7 @@ int isPrime(int n, int divisor)
 /**
  * is_prime_number - check if prime
  * @n: number to check
+ *
  * Return: 1 if prime, 0 if not
  */
 
