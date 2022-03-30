@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * compare - compare head and tail indices for match
+ * compareString - compare head and tail indices for match
  * @head: index start from left of string
  * @tail: index start from right of string, moving backwards
  *
