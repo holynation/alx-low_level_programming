@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * find_root - find square root of n, 
+ * find_root - find square root of n,
  * starting from the smallest possible, 0
  * @n: n
  * @root: test this root
