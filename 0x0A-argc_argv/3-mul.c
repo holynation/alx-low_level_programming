@@ -18,7 +18,7 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		return (1);
 	}
-	/* mulitply the  two args passed via cmd line and convert string to int using atoi*/
+	/* mulitply d 2 args passed via cmd line and use atoi to int conv*/
 	printf("%d\n", atoi(argv[1]) * atoi(argv[2]));
 	return (0);
 }
