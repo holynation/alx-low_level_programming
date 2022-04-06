@@ -24,7 +24,7 @@ char *_strdup(char *str)
 	}
 	len++; /* account for null terminator to length */
 
-	copy_str = malloc(sizeof(char) * len); /* allocate dynamic memory based on str length */
+	copy_str = malloc(sizeof(char) * len); /* allocate dynamic memory */
 
 	if (copy_str == NULL) /* validate memory */
 		return (NULL);
