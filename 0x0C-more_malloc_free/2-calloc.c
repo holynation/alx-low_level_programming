@@ -17,7 +17,7 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	if (nmemb <= 0 || size <= 0) /* validate input */
 		return (NULL);
 	
-	int lenPtr = nmemb * size;
+	unsigned int lenPtr = nmemb * size;
 	ptr = malloc(lenPtr);/* allocate memory and check if error */
 
 	if (ptr == NULL)
