@@ -17,14 +17,13 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	if (nmemb <= 0 || size <= 0) /* validate input */
 		return (NULL);
 	
-	unsigned int lenPtr = nmemb * size;
-	ptr = malloc(lenPtr);/* allocate memory and check if error */
+	ptr = malloc(nmemb * size);/* allocate memory and check if error */
 
 	if (ptr == NULL)
 		return (NULL);
 
 	/* set allocated memory values to 0 */
-	for (i = 0; i < lenPtr; i++)
+	for (i = 0; i < nmemb * size; i++)
 		*((char *)ptr + i) = 0; /* type cast assigning values*/
 
 	return (ptr);
