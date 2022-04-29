@@ -1,4 +1,4 @@
-o#include "main.h"
+#include "main.h"
 
 /**
  * flip_bits - determine how many bits to flip to get from one num to another
