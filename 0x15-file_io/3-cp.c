@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * __error - prints error messages and exits with exit value
+ * _error - prints error messages and exits with exit value
  * @error: num is either exit value or file descriptor
  * @s: str is a name, either of the two filenames
  * @fd: file descriptor
@@ -45,7 +45,7 @@ int main(int argc, char *argv[])
 	/*open file descriptor for source file*/
 	fd_2 = open(argv[2], O_CREAT | O_TRUNC | O_WRONLY, 0664);
 	if (fd_2 == -1)
-		_error(99, argv[2], 0);
+		_error(98, argv[2], 0);
 
 	/*open file descriptor for destination file*/
 	fd_1 = open(argv[1], O_RDONLY);
