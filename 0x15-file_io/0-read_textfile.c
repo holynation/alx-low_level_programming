@@ -6,7 +6,6 @@
  * @letters: size to read
  * Return: actual size read and printed
  */
-
 ssize_t read_textfile(const char *filename, size_t letters)
 {
 	int fd; /* file descriptor */
@@ -37,7 +36,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 
 	/* write to standard output */
 	n_write = write(STDOUT_FILENO, buffer, n_read);
-	if (n_wrote == -1)
+	if (n_write == -1)
 	{
 		free(buffer);
 		close(fd);
