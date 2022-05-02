@@ -45,7 +45,7 @@ int main(int argc, char *argv[])
 	/*open file descriptor for source file*/
 	fd_2 = open(argv[2], O_CREAT | O_TRUNC | O_WRONLY, 0664);
 	if (fd_2 == -1)
-		_error(98, argv[2], 0);
+		_error(99, argv[2], 0);
 
 	/*open file descriptor for destination file*/
 	fd_1 = open(argv[1], O_RDONLY);
